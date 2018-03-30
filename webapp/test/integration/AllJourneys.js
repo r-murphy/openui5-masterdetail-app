@@ -11,26 +11,26 @@ QUnit.config.autostart = false;
 // * All 3 Objects have at least one LineItems
 
 sap.ui.require([
-	"sap/ui/test/Opa5",
-	"sap/ui/demo/masterdetail/test/integration/pages/Common",
-	"sap/ui/test/opaQunit",
-	"sap/ui/demo/masterdetail/test/integration/pages/App",
-	"sap/ui/demo/masterdetail/test/integration/pages/Browser",
-	"sap/ui/demo/masterdetail/test/integration/pages/Master",
-	"sap/ui/demo/masterdetail/test/integration/pages/Detail",
-	"sap/ui/demo/masterdetail/test/integration/pages/NotFound"
-], function (Opa5, Common) {
-	"use strict";
-	Opa5.extendConfig({
-		arrangements: new Common(),
-		viewNamespace: "sap.ui.demo.masterdetail.view."
-	});
+  "sap/ui/test/Opa5",
+  "demo/masterdetail/test/integration/pages/Common",
+  "sap/ui/test/opaQunit",
+  "demo/masterdetail/test/integration/pages/App",
+  "demo/masterdetail/test/integration/pages/Browser",
+  "demo/masterdetail/test/integration/pages/Master",
+  "demo/masterdetail/test/integration/pages/Detail",
+  "demo/masterdetail/test/integration/pages/NotFound"
+], function(Opa5, Common) {
+  "use strict";
+  Opa5.extendConfig({
+    arrangements: new Common(),
+    viewNamespace: "demo.masterdetail.view."
+  });
 
-	sap.ui.require([
-		"sap/ui/demo/masterdetail/test/integration/MasterJourney",
-		"sap/ui/demo/masterdetail/test/integration/NavigationJourney",
-		"sap/ui/demo/masterdetail/test/integration/NotFoundJourney"
-	], function () {
-		QUnit.start();
-	});
+  sap.ui.require([
+    "demo/masterdetail/test/integration/MasterJourney",
+    "demo/masterdetail/test/integration/NavigationJourney",
+    "demo/masterdetail/test/integration/NotFoundJourney"
+  ], function() {
+    QUnit.start();
+  });
 });

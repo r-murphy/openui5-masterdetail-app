@@ -6,26 +6,26 @@ jQuery.sap.require("sap.ui.qunit.qunit-junit");
 QUnit.config.autostart = false;
 
 sap.ui.require([
-	"sap/ui/test/Opa5",
-	"sap/ui/demo/masterdetail/test/integration/pages/Common",
-	"sap/ui/test/opaQunit",
-	"sap/ui/demo/masterdetail/test/integration/pages/App",
-	"sap/ui/demo/masterdetail/test/integration/pages/Browser",
-	"sap/ui/demo/masterdetail/test/integration/pages/Master",
-	"sap/ui/demo/masterdetail/test/integration/pages/Detail",
-	"sap/ui/demo/masterdetail/test/integration/pages/NotFound"
-], function (Opa5, Common) {
-	"use strict";
-	Opa5.extendConfig({
-		arrangements: new Common(),
-		viewNamespace: "sap.ui.demo.masterdetail.view."
-	});
+  "sap/ui/test/Opa5",
+  "demo/masterdetail/test/integration/pages/Common",
+  "sap/ui/test/opaQunit",
+  "demo/masterdetail/test/integration/pages/App",
+  "demo/masterdetail/test/integration/pages/Browser",
+  "demo/masterdetail/test/integration/pages/Master",
+  "demo/masterdetail/test/integration/pages/Detail",
+  "demo/masterdetail/test/integration/pages/NotFound"
+], function(Opa5, Common) {
+  "use strict";
+  Opa5.extendConfig({
+    arrangements: new Common(),
+    viewNamespace: "demo.masterdetail.view."
+  });
 
-	sap.ui.require([
-		"sap/ui/demo/masterdetail/test/integration/NavigationJourneyPhone",
-		"sap/ui/demo/masterdetail/test/integration/NotFoundJourneyPhone",
-		"sap/ui/demo/masterdetail/test/integration/BusyJourneyPhone"
-	], function () {
-		QUnit.start();
-	});
+  sap.ui.require([
+    "demo/masterdetail/test/integration/NavigationJourneyPhone",
+    "demo/masterdetail/test/integration/NotFoundJourneyPhone",
+    "demo/masterdetail/test/integration/BusyJourneyPhone"
+  ], function() {
+    QUnit.start();
+  });
 });

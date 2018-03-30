@@ -1,42 +1,53 @@
-![openui5](http://openui5.org/images/OpenUI5_new_big_side.png)
+# openui5-masterdetail-app-ts #
 
-# openui5-masterdetail-app
+TypeScript port of [SAP OpenUI5's Master Detail App](https://github.com/SAP/openui5-masterdetail-app.git).
 
-> [OpenUI5](https://github.com/SAP/openui5) master-detail skeleton app using Grunt & Bower. The Master-Detail application template implements a typical split-screen layout, one of the design patterns that is specified by the [SAP Fiori Design Guidelines](https://experience.sap.com/fiori-design/). It includes generic application functionality and tests that can be easily extended with custom functionality if needed. You can find more documentation on this template [here](https://sapui5.hana.ondemand.com/#docs/guide/8ed9339f3a99418e82a02f0fb4b5d6b9.html).
+The purpose of this project is to serve as examples for my other 2 projects:
+* [openui5-types](https://github.com/r-murphy/openui5-types)
+* [babel-plugin-transform-modules-ui5](https://github.com/r-murphy/babel-plugin-transform-modules-ui5)
+
+It's a straight-forward port of the original masterdetail app without architectural or design changes. Only a few new methods were added, and not new modules.
+
+For the original `.js` only version, refer to SAP's [openui5-masterdetail-app](https://github.com/SAP/openui5-masterdetail-app)
 
 ## Getting started
 
-1. Install node.js (get it from [nodejs.org](http://nodejs.org/)).
+* Install node.js (get it from [nodejs.org](http://nodejs.org/)).
   * If working behind a proxy, you need to configure it properly (HTTP_PROXY / HTTPS_PROXY / NO_PROXY environment variables)
-2. Install grunt-cli and bower globally
+* Install grunt-cli and bower globally
 
 ```sh
 npm install grunt-cli bower -g
 ```
 
-3. Clone the repository and navigate into it
+* Clone the repository and navigate into it
 
 ```sh
-git clone https://github.com/SAP/openui5-masterdetail-app.git
-cd openui5-masterdetail-app
+git clone https://github.com/r-murphy/openui5-masterdetail-app-ts.git
+cd openui5-masterdetail-app-ts
 ```
 
-4. Install all npm dependencies
+* Install all npm dependencies
 
 ```sh
 npm install
 ```
 
-5. Install all bower dependencies
+* Install all bower dependencies
 
 ```sh
 bower install
 ```
 
-6. Run grunt to lint, build and run a local server (have a look into `Gruntfile.js` to see all the tasks).
+* Run grunt to lint, build and run a local server (have a look into `Gruntfile.js` to see all the tasks).
 
 ```sh
 grunt
 ```
 
-7. Open the app in your browser: [http://localhost:8080](http://localhost:8080)
+* Open the app in your browser: [http://localhost:8080](http://localhost:8080)
+
+## Limitations
+
+* The grunt build does not watch and re-compile. I personally don't use grunt, and only configured it to work with tsc/babel since the original project uses grunt. It's a bit out of scope on what I wanted this project to illustrate, but if I have time I'll see if I can resolve it (Mrs also appreciated and welcome).
+	* A non-grunt solution should be documented.

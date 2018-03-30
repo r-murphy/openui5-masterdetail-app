@@ -1,3 +1,7 @@
 node_modules
 bower_components
+/.build
 dist
+/*.log
+.tscache
+tscommand*

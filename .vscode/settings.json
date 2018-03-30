@@ -1,0 +1,16 @@
+{
+  "cSpell.words": [
+    "appresources",
+    "camelcase",
+    "keepalive",
+    "masterdetail",
+    "mockdata",
+    "qunit",
+    "themelib",
+    "thirdparty",
+    "ungroups",
+    "viewmodel",
+    "webapp"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

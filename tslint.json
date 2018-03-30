@@ -1,0 +1,52 @@
+// https://palantir.github.io/tslint/rules/
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended", 
+        "tslint-sonarts",
+        "tslint-consistent-codestyle"
+    ],
+    "jsRules": {},
+    "rules": {
+        "no-shadowed-variable": false, //TODO check options
+        "interface-name": [true, "never-prefix"],
+        "no-empty-interface": false,
+        "object-literal-key-quotes": false,
+        "no-unused-expression": false,
+        "no-console": false,
+        "arrow-parens": false,
+        // "comment-format": false,
+        "max-classes-per-file": false,
+        "one-line": false,
+        "member-access": false,
+        "member-ordering": false,
+        "ordered-imports": false,
+        "trailing-comma": false,
+        "object-literal-sort-keys": false,
+        "ban-types": [false],
+        // "jsdoc-format": false, //TODO enable later
+        "curly": [true, "ignore-same-line"],
+        "variable-name": false,
+        "no-angle-bracket-type-assertion": false,
+        "max-line-length": [true, 200],
+        "whitespace": [
+            false, 
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-module",
+            "check-separator",
+            "check-rest-spread",
+            "check-type",
+            // "check-typecast",
+            "check-type-operator",
+            "check-preblock"
+        ],
+        // From tslint-consistent-codestyle
+        // "early-exit": true,
+        // "no-unnecessary-else": true,
+        // "ext-curly": [true, "else", "braced-child", "nested-if-else"]
+        "no-static-this": true
+    },
+    "rulesDirectory": []
+}

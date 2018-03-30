@@ -1,0 +1,14 @@
+{
+  "sourceMaps": false,
+  "plugins": [
+    ["transform-modules-ui5", {
+      "noImportInteropPrefixes": ["sap/", "demo/"],
+      "moveControllerPropsToOnInit": true,
+      "onlyConvertNamedClass": true,
+      "addControllerStaticPropsToExtend": true
+    }]
+  ],
+  "presets": [
+    "env"
+  ]
+}

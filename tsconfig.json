@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    // "watch": true,
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "module": "ESNext",
+    "strict": true,
+    "baseUrl": "./",
+    "outDir": "./.build/tsc-out",
+    "rootDir": "./webapp",
+    "paths": {
+      "sap/*": [
+        "./node_modules/openui5-types/dist/1.52/exports/sap/*"
+      ],
+      "jquery.sap.global": [
+        "./node_modules/openui5-types/dist/1.52/exports/jquery.sap.global.d.ts"
+      ],
+      "demo/masterdetail/*": [
+        "./webapp/*"
+      ]
+    },
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  },
+  "files": [
+    "./node_modules/openui5-types/dist/1.52/types/index.d.ts"
+  ],
+  "include": [
+    "webapp/**/*"
+  ],
+  // "exclude": [
+  //   // "**/*.spec.ts", // hello
+  // ]
+}
